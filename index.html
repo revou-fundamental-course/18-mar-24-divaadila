@@ -7,6 +7,113 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <nav class="nav-container">
+        <section class="logo-icon"></section>
+        <section>
+            <ul class="nav_links">
+                <li class="link"><a href="#">Home</a></li>
+                <li class="link"><a href="#services">Services</a></li>
+                <li class="link"><a href="#fruits">Fruits</a></li>
+            </ul>
+        </section>
+    </nav>
+    <section class="section-container">
+        <header>
+            <h1 style="font-size: 40px;">Your Trusted Travel Agent's</h1><br>
+            <h3>Your Happiness is Our Happiness</h3>
+        </header>
+        <br>
+        <section class="section-content-container">
+            <div class="pic-container">
+                <div>
+                    <img class="img-slidebanner" src="assets/foto1.jpg"><br>
+                    <img class="img-slidebanner" src="assets/foto2.jpg"><br>
+                    <img class="img-slidebanner" src="assets/foto3.jpg"><br>
+                    <button class="prev" onclick="plusDivs(-1)">◄</button>
+                    <button class="next" onclick="plusDivs(1)">►</button>
+                </div>
+            </div>
+            <div class="form">
+                <h3>Contact Us</h3>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p><br><br>
+                <label>Your Name:</label><br>
+                <input type="text" class="form-item" id="name" placeholder="First and Last Name"><br><br>
+                <label>Email Address:</label><br>
+                <input type="email" class="form-item" id="email" placeholder="example@email.com"><br><br>
+                <label for="activity">What Are You Interested In?</label><br>
+                <select id="activity" name="activity">
+                    <option disabled selected>Select Option</option>
+                    <option value="hiking">Hiking</option>
+                    <option value="snorkeling">Snorkeling</option>
+                    <option value="sightseeing">Berwisata</option>
+                    <option value="culinary">Kuliner</option>
+                    <option value="museum">Mengunjungi Museum</option>
+                </select><br><br>
+                <button type="button" class="submit-btn btn" onclick="validateForm()">Send</button>
+            </div>
+        </section>
+        <section class="info-container">
+            <div>
+                <p style="text-align: left;">Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
+                <div>
+                    <span class="number-bullet">1</span>
+                    <span class="feature">Your first feature, written in the form of a benefit statement</span><br><br>
+                    <span class="number-bullet">2</span>
+                    <span class="feature">Your second feature, written in the form of a benefit statement</span><br><br>
+                    <span class="number-bullet">3</span>
+                    <span class="feature">Your third feature, written in the form of a benefit statement</span>
+                </div>
+            </div>
+        </section><br><br>
+        <section class="package-container">
+            <h1 class="overlay-text">Our Package</h1>
+        </section>  
+        <section class="destination-container">
+            <div class="destination-item">
+                <div class="details">
+                    <img src="assets/logo2.png" alt="Lamp Icon">
+                    <h3>Jepang</h3>
+                </div>
+                <p class="description">Travel dan wisata di Jepang. Kunjungi tempat-tempat wisata dan nikmati keindahan alamnya.</p>
+            </div>
+            <div class="destination-item">
+                <div class="details">
+                    <img src="assets/logo2.png" alt="Lamp Icon">
+                    <h3>Thailand</h3>
+                </div>
+                <p class="description">Travel dan wisata di Thailand. Kunjungi kuil-kuil indah dan nikmati masakan khasnya.</p>
+            </div>
+            <div class="destination-item">
+                <div class="details">
+                    <img src="assets/logo2.png" alt="Lamp Icon">
+                    <h3>Malaysia</h3>
+                </div>
+                <p class="description">Travel dan wisata di Malaysia. Jelajahi keindahan alam dan budaya yang beragam.</p>
+            </div>
+            <div class="destination-item">
+                <div class="details">
+                    <img src="assets/logo2.png" alt="Lamp Icon">
+                    <h3>Bali</h3>
+                </div>
+                <p class="description">Travel dan wisata di Bali. Kunjungi tempat-tempat bersejarah dan nikmati keindahan pantainya.</p>
+            </div>
+            <div class="destination-item">
+                <div class="details">
+                    <img src="assets/logo2.png" alt="Lamp Icon">
+                    <h3>Yogyakarta</h3>
+                </div>
+                <p class="description">Travel dan wisata di Yogyakarta. Kunjungi candi-candi bersejarah dan nikmati kebudayaannya.</p>
+            </div>
+            <div class="destination-item">
+                <div class="details">
+                    <img src="assets/logo2.png" alt="Lamp Icon">
+                    <h3>Bandung</h3>
+                </div>
+                <p class="description">Travel dan wisata di Bandung. Kunjungi kuliner yang menarik dan nikmati keindahan pantainya.</p>
+            </div>
+        </section>
+        <footer>&copy;Diva Maharani Adila</footer>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
